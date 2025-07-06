@@ -1,0 +1,39 @@
+::selection {
+  text-shadow: none;
+  background: #ed3;
+  color: indigo;
+}
+
+:root {
+  color: papayawhip;
+  background-color: darkviolet;
+  background-image: conic-gradient(darkviolet, indigo, blueviolet, darkviolet);
+}
+
+:any-link {
+  color: papayawhip;
+}
+
+:focus {
+  text-decoration-style: dotted;
+  outline: thick dotted;
+}
+
+:hover {
+  text-decoration-style: double;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :any-link {
+    transition: text-shadow 300ms ease-out;
+  }
+}
+
+b {
+  text-shadow:
+    0 -8vh 1em midnightblue,
+    0 -5vh 0 darkslateblue,
+    0 -3vh 0 indigo,
+    0 -2vh 0 purple,
+    0 -1vh 0 deepskyblue;
+}
