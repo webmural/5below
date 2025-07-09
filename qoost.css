@@ -24,19 +24,19 @@ article {
 }
 
 b {
-  font-size: 1.236rem;
-}
-
-h1 {
-  font: 1.236em sans-serif;
-}
-
-samp {
-  font-family: sans-serif;
-  display: flex;
-  margin-bottom: 1em;
+  font-size: 3.6rem;
 }
 
 a {
   display: inline-flex;
+}
+
+.shy {
+  font-size: 0;
+  line-height: 0;
+  margin: 0;
+}
+
+.symbol {
+  text-decoration: none;
 }
