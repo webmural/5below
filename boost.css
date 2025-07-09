@@ -1,17 +1,50 @@
-::selection {
-  text-shadow: none;
-  background: #ed3;
-  color: indigo;
+@media (prefers-color-scheme: dark) {
+  ::selection {
+    background: #5be;
+    color: #327;
+  }
+
+  :root {
+    color: #5be;
+    background-color: #327;
+    background-image: conic-gradient(#327, #32a, #327, #32a, #327);
+  }
+  
+  b {
+    text-shadow:
+      0 -8vh 1em #8be,
+      0 -5vh 0 #5be,
+      0 -3vh 0 #3be,
+      0 -2vh 0 #2be,
+      0 -1vh 0 #1be;
+  }
 }
 
-:root {
-  color: papayawhip;
-  background-color: darkviolet;
-  background-image: conic-gradient(darkviolet, indigo, blueviolet, darkviolet);
+@media (prefers-color-scheme: light) {
+  ::selection {
+    background: #327;
+    color: #5be;
+  }
+
+  :root {
+    color: #32a;
+    background-color: #3ce;
+    background-image: conic-gradient(#5ce, #3ce, #2ce, #3ce, #5ce); 
+  }
+  
+  b {
+    text-shadow:
+      0 -8vh 1em #32b,
+      0 -5vh 0 #32a,
+      0 -3vh 0 #329,
+      0 -2vh 0 #328,
+      0 -1vh 0 #327;
+  }  
 }
 
 :any-link {
-  color: papayawhip;
+  color: inherit;
+  background-color: transparent;
 }
 
 :focus {
@@ -21,19 +54,4 @@
 
 :hover {
   text-decoration-style: double;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  :any-link {
-    transition: text-shadow 300ms ease-out;
-  }
-}
-
-b {
-  text-shadow:
-    0 -8vh 1em midnightblue,
-    0 -5vh 0 darkslateblue,
-    0 -3vh 0 indigo,
-    0 -2vh 0 purple,
-    0 -1vh 0 deepskyblue;
 }
